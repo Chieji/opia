@@ -1,0 +1,81 @@
+providers:
+  openai:
+    name: OpenAI
+    base_url: https://api.openai.com/v1
+    auth_type: api_key
+    env_var: OPENAI_API_KEY
+    keyring_service: opia/openai
+    default_model: gpt-4o
+    supports_oauth: false
+
+  anthropic:
+    name: Anthropic
+    base_url: https://api.anthropic.com/v1
+    auth_type: api_key
+    env_var: ANTHROPIC_API_KEY
+    keyring_service: opia/anthropic
+    default_model: claude-3-opus-20240229
+    supports_oauth: false
+
+  groq:
+    name: Groq
+    base_url: https://api.groq.com/openai/v1
+    auth_type: api_key
+    env_var: GROQ_API_KEY
+    keyring_service: opia/groq
+    default_model: llama-3.3-70b-versatile
+    supports_oauth: false
+
+  mistral:
+    name: Mistral
+    base_url: https://api.mistral.ai/v1
+    auth_type: api_key
+    env_var: MISTRAL_API_KEY
+    keyring_service: opia/mistral
+    default_model: mistral-large-latest
+    supports_oauth: false
+
+  openrouter:
+    name: OpenRouter
+    base_url: https://openrouter.ai/api/v1
+    auth_type: api_key
+    env_var: OPENROUTER_API_KEY
+    keyring_service: opia/openrouter
+    default_model: openai/gpt-4o
+    supports_oauth: false
+
+  gemini:
+    name: Gemini
+    base_url: https://generativelanguage.googleapis.com/v1beta
+    auth_type: api_key
+    env_var: GEMINI_API_KEY
+    keyring_service: opia/gemini
+    default_model: gemini-2.0-flash
+    supports_oauth: false
+
+  fireworks:
+    name: Fireworks AI
+    base_url: https://api.fireworks.ai/inference/v1
+    auth_type: api_key
+    env_var: FIREWORKS_API_KEY
+    keyring_service: opia/fireworks
+    default_model: accounts/fireworks/models/llama-v3p1-405b-instruct
+    supports_oauth: false
+
+  together:
+    name: Together AI
+    base_url: https://api.together.xyz/v1
+    auth_type: api_key
+    env_var: TOGETHER_API_KEY
+    keyring_service: opia/together
+    default_model: togethercomputer/llama-3-70b-instruct
+    supports_oauth: false
+
+  deepseek:
+    name: DeepSeek
+    base_url: https://api.deepseek.com/v1
+    auth_type: api_key
+    env_var: DEEPSEEK_API_KEY
+    keyring_service: opia/deepseek
+    default_model: deepseek-chat
+    supports_oauth: false
